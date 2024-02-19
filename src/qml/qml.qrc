@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Contact.qml</file>
+        <file>Edit.qml</file>
+    </qresource>
+</RCC>

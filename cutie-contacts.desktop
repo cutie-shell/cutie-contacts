@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.2
+Type=Application
+Name=Contacts
+Exec=/usr/bin/cutie-contacts
+TryExec=/usr/bin/cutie-contacts
+Icon=cutie-contacts
+Terminal=false
+StartupNotify=false
+Comment=Contact manager
+Categories=Office;ContactManagement;
