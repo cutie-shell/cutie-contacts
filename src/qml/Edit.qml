@@ -19,6 +19,7 @@ CutiePage {
 		ListElement {
 			name: qsTr("Phone number")
 			value: "PhoneNumber"
+			imHints: Qt.ImhDialableCharactersOnly
 		}
 		ListElement {
 			name: qsTr("Email address")
@@ -63,6 +64,7 @@ CutiePage {
 					id: editField
 					text: contactId === null ? "" :
 						contactStore.data.contacts[contactId][value]
+					inputMethodHints: imHints
 					anchors {
 						left: parent.left
 						right: parent.right
