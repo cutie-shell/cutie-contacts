@@ -1,4 +1,5 @@
 import Cutie
+import Cutie.Wlc
 import QtQuick
 
 CutieWindow {
@@ -7,6 +8,10 @@ CutieWindow {
 	height: 800
 	visible: true
 	title: qsTr("Contacts")
+
+	CutieWlc {
+        id: compositor
+    }
 
 	CutieStore {
 		id: contactStore

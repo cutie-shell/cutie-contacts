@@ -56,8 +56,37 @@ CutiePage {
 		}
 
 		delegate: CutieListItem {
+			id: infoItem
 			text: contactStore.data.contacts[contactId][value]
 			subText: name
+			menu: (value === "PhoneNumber")
+				? phoneMenu.createObject(infoItem, {
+					number: text
+				}) : null
+			onClicked: {
+				if (menu) menu.open();
+			}
+		}
+
+		Component {
+			id: phoneMenu
+			CutieMenu {
+				property var number: ""
+				CutieMenuItem {
+					text: qsTr("Voicecall")
+					onTriggered: {
+						compositor.execApp(
+							"cutie-phone \"" + number + "\"");
+					}
+				}
+				CutieMenuItem {
+					text: qsTr("Text message")
+					onTriggered: {
+						compositor.execApp(
+							"cutie-messaging \"" + number + "\"");
+					}
+				}
+			}
 		}
 	}
 }
