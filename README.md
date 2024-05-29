@@ -1,6 +1,6 @@
 # Cutie Contacts
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/cutie-shell/cutie-contacts/tree/droidian.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/cutie-shell/cutie-contacts/tree/droidian)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/cutie-shell/cutie-contacts/tree/cutie.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/cutie-shell/cutie-contacts/tree/cutie)
 
 <img src="cutie-contacts.svg" width="100px">
 The contacts app for Cutie UI.
