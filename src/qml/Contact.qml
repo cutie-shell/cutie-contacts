@@ -75,15 +75,19 @@ CutiePage {
 				CutieMenuItem {
 					text: qsTr("Voicecall")
 					onTriggered: {
+						let n = CutiePhonenumberHelper.createPhonenumber(
+							number, mainWindow.localISO);
 						compositor.execApp(
-							"cutie-phone \"" + number + "\"");
+							"cutie-phone \"" + n.format(CutiePhonenumber.International) + "\"");
 					}
 				}
 				CutieMenuItem {
 					text: qsTr("Text message")
 					onTriggered: {
+						let n = CutiePhonenumberHelper.createPhonenumber(
+							number, mainWindow.localISO);
 						compositor.execApp(
-							"cutie-messaging \"" + number + "\"");
+							"cutie-messaging \"" + n.format(CutiePhonenumber.International) + "\"");
 					}
 				}
 			}

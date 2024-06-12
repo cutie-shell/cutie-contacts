@@ -9,6 +9,9 @@ CutieWindow {
 	visible: true
 	title: qsTr("Contacts")
 
+	property string localISO: CutiePhonenumberHelper.MCCtoISO(
+		CutieModemSettings.modems[0].networkCountryCode)
+
 	CutieWlc {
         id: compositor
     }
